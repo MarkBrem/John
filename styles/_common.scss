@@ -1,0 +1,17 @@
+// .section{
+//      padding-bottom: 50px;
+//      padding-top: 50px;
+// }
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    // padding-left: 15px;
+    // padding-right: 15px;
+    width: 375px;
+    outline: 1px solid red;
+
+    @media screen and (min-width: $desktop) {
+        width:$desktop;
+    }
+}
