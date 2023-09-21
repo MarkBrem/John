@@ -9,9 +9,10 @@
     // padding-left: 15px;
     // padding-right: 15px;
     width: 375px;
-    outline: 1px solid red;
+    // outline: 1px solid red;
 
     @media screen and (min-width: $desktop) {
         width:$desktop;
+        padding-left: 146px;
     }
 }

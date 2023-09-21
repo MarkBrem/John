@@ -7,9 +7,19 @@ footer{
     justify-content: space-evenly;
     padding-top: 51px;
     padding-bottom: 26px;
+    @media screen and (min-width:$desktop) {
+        justify-content: center;
+    }
+}
+
+.footer-items{
+    @media screen and (min-width:$desktop) {
+            margin-right: 35px;
+        }
 }
 
 .footer-link{
+    display: inline;
     color: #21243D;
     text-align: center;
         font-family: Heebo;
@@ -19,4 +29,7 @@ footer{
         line-height: normal;
     margin-left: 76px;
     margin-bottom: 54px;
+    @media screen and (min-width:$desktop) {
+            margin-left: 368px;
+        }
 }

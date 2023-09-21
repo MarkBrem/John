@@ -3,6 +3,21 @@
     padding-bottom: 38px;
 }
 
+.container.article{
+    @media screen and (min-width:$desktop) {
+        padding-left: 148px;
+        padding-right: 148px;
+    }
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.article-list{
+    @media screen and (min-width:$desktop) {
+        display: flex;
+    }
+}
+
 .article-title{
     color: var(--Dark-Color, #21243D);
         font-family: Heebo;
@@ -12,6 +27,31 @@
         line-height: 60px;
     text-align: center;
     margin-bottom: 11px;
+    @media screen and (min-width:$desktop) {
+        margin: 0;
+    }
+}
+
+.article-link{
+    display: inline-block;
+    color: #00A8CC;
+    text-align: right;
+        font-family: Heebo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 27px;
+    @media screen and (max-width:$desktop) {
+        display: none;
+    }
+}
+
+.container-upper{
+    @media screen and (min-width:$desktop) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .article-post{
@@ -25,11 +65,14 @@
 .article-items{
     border-radius: 4px;
         box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
-        margin-right: 10px;
-        margin-left: 10px;
         &:nth-child(1){
             margin-bottom: 17px;
         }
+    @media screen and (min-width:$desktop) {
+        &:nth-child(1){
+            margin-right: 20px;
+        }
+    }
 }
 
 .post-title{
